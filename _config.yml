@@ -1,143 +1,161 @@
-#page title
-page_title                                :                                           # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+# Site configuration
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+# 8. Site favicons & manifest icons
+# 9. Site navigation
 
-# App Info
-ios_app_id                                : 1234793120                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
-ios_app_country                           : us                                        # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
-
-appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
-playstore_link                            :                                           # Enter Google Play Store URL.
-presskit_download_link                    : https://emilbaehr.com                                          # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
-                                                                                      # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
-
-app_icon                                  : assets/sunbaby.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
-app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Write a short tagline for your app.
-
-enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
-
-
-
-# Information About Yourself
-your_name                                 : Emil Baehr                                
-your_link                                 : https://emilbaehr.com                     
-your_city                                 : Copenhagen                                
-email_address                             : emil.baehr@gmail.com
-facebook_username                         :                                           
-instagram_username                        : ebaehr
-twitter_username                          : ebaehr
-github_username                           : emilbaehr
-youtube_username                          :
-mastodon_link                             : https://mastodon.social/@ebaehr
-
-
-
-# Feature List                            Edit, add or remove features to be presented.
-features                                  :
-
-  - title                                 : GitHub Pages Jekyll Theme
-    description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. Push to gh-pages branch. Voilá!
-    fontawesome_icon_name                 : magic
-    
-  - title                                 : iPhone Device Preview
-    description                           : Preview your app in the context of an iPhone device. Five different device colors included.
-    fontawesome_icon_name                 : mobile
-
-  - title                                 : Video Support
-    description                           : Preview app video on the iPhone device simply by placing your video files in the videos folder.
-    fontawesome_icon_name                 : play-circle
-
-  - title                                 : Automatic Icon and Metadata
-    description                           : Enter iOS app ID in the _config.yml file to automatically fetch app icon, price and App Store Link.
-    fontawesome_icon_name                 : sync
-
-  - title                                 : Easy to Tweak
-    description                           : Tweak accent color, images, icons and transparency via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : adjust
-  
-  - title                                 : Feature List
-    description                           : Add features (like this one) to your site via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : star
-
-  - title                                 : Smart App Banner
-    description                           : Display a smart app banner on iOS devices.
-    fontawesome_icon_name                 : arrow-alt-circle-down
-
-  - title                                 : Social Links
-    description                           : Easily add social media accounts and contact info in the footer via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : link
-
-  - title                                 : FontAwesome Support
-    description                           : Pick custom Font Awesome icons for the feature list via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : info-circle
-
-  - title                                 : # New Feature Title
-    description                           : # New Feature Description
-    fontawesome_icon_name                 : # Enter Font Awesome icon name (e.g. star). Find icons on fontawesome.com/icons.
-
-
-
-# Theme Settings
-topbar_color                              : "#000000"
-topbar_transparency                       : 0.1
-topbar_title_color                        : "#ffffff"
-
-cover_image                               : assets/headerimage.png                    # Replace with alternative image path or image URL.
-cover_overlay_color                       : "#363b3d"
-cover_overlay_transparency                : 0.8
-
-device_color                              : black                                     # Set to: blue, black, yellow, coral or white.
-
-body_background_color                     : "#ffffff"
-
-link_color                                : "#1d63ea"
-
-app_title_color                           : "#ffffff"
-app_price_color                           : "#ffffff"
-app_description_color                     : "#ffffff"
-
-feature_title_color                       : "#000000"
-feature_text_color                        : "#666666"
-
-feature_icons_foreground_color            : "#1d63ea"
-feature_icons_background_color            : "#e6e6e6"
-
-social_icons_foreground_color             : "#666666"
-social_icons_background_color             : "#e6e6e6"
-
-footer_text_color                         : "#666666"
-
-
-
-
-
-
-
-
-
-
-
-
-
-####################################################
-### Jekyll Configuration. No need to touch this. ###
-####################################################
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :compressed # You might prefer to minify using :compressed
-
-# Exclude these files from your production _site
+# 1. Files excluded from Jekyll builds
 exclude:
-  - LICENSE
-  - README.md
-  - CNAME
+- README.md
+- CODE_OF_CONDUCT.md
+- CONTRIBUTING.md
+- screenshot.png
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- alembic-jekyll-theme.gemspec
+- .jekyll-cache
 
+# 2. Installed Gems
+plugins:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-feed
+- jekyll-commonmark
+- jekyll-include-cache
+- jemoji
+
+# 3. Gem settings
+paginate: 2 # jekyll-paginate > items per page
+paginate_path: blog/page:num # jekyll-paginate > blog page
+jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
+twitter:
+  username: DavidDarnes # jekyll-seo-tag > Owners twitter username
+author: DavidDarnes # jekyll-seo-tag > default author
+social: # jekyll-seo-tag > social overrides
+  name: David Darnes # jekyll-seo-tag > real name
+  links:  # jekyll-seo-tag > social aliases (sameAs)
+    - https://twitter.com/DavidDarnes
+    - https://www.facebook.com/daviddarnes
+    - https://www.linkedin.com/in/daviddarnes
+    - https://github.com/daviddarnes
+# markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
+# commonmark:
+  # options: ["SMART", "FOOTNOTES"]
+  # extensions: ["strikethrough", "autolink", "table"]
+
+# 4. Jekyll settings
+sass:
+  style: compressed # Style compression
+permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: Europe/London # Timezone for blog posts and alike
+
+# 5. Collections
 collections:
-  pages:
+  posts:
+    title: Posts # Needed for Siteleaf
     output: true
-    permalink: /:path/
+    description: "My thoughts and ideas" # The post list page content
+    feature_text: |
+      Welcome to the blog
+    feature_image: "https://picsum.photos/2560/600?image=866"
 
-# Markdown rendering
-markdown: kramdown
+# 6. Jekyll collections settings
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: "/assets/default-social-image.png" # Default image for sharing
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post # Set the default layout for posts
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page # Set the default layout for pages
+
+# 7. Site settings
+encoding: utf-8 # Make sure the encoding is right
+lang: en-GB # Set the site language
+title: "Alembic" # Site name or title, also used in jekyll-seo-tag
+logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
+url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
+baseurl: ""
+repo: "https://github.com/daviddarnes/alembic"
+email: "me@daviddarnes.com"
+# disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
+# date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
+# google_analytics: ""
+# google_analytics_anonymize_ip: ""
+# service_worker: false # Will turn off the service worker if set to false
+# short_name: "Al" # The web application short name, defaults to the site title
+css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+
+# 8. Site favicons & manifest icons
+favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
+  16: '/assets/logos/logo@16px.png'
+  32: '/assets/logos/logo@32px.png'
+  96: '/assets/logos/logo@96px.png'
+  120: '/assets/logos/logo@120px.png'
+  144: '/assets/logos/logo@144px.png'
+  180: '/assets/logos/logo@180px.png'
+  512: '/assets/logos/logo@512px.png'
+  1024: '/assets/logos/logo@1024px.png'
+
+# 9. Site navigation
+navigation_header:
+- title: Home
+  url: /
+- title: Elements
+  url: /elements/
+- title: Blog
+  url: /blog/
+- title: Categories
+  url: /categories/
+- title: Search
+  url: /search/
+- title: Fork Alembic
+  url: https://github.com/daviddarnes/alembic
+
+navigation_footer:
+- title: Created by David Darnes
+  url: https://darn.es
+
+social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
+  Twitter: https://twitter.com/DavidDarnes
+  LinkedIn: https://www.linkedin.com/in/daviddarnes
+  GitHub: https://github.com/daviddarnes
+  link: https://darn.es
+  RSS: /feed.xml
+
+sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
+  Twitter: "#0d94e7"
+  facebook: "#3B5998"
+  Email: true
+
+# Load custom fonts from fonts.google.com etc
+#
+# TIP: Try to keep the number of urls as low to reduce the performance cost
+#      If multiple fonts can be requested in a single url opt for this
+fonts:
+  preconnect_urls:
+    - https://fonts.gstatic.com
+  font_urls:
+    - https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap
