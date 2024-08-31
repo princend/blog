@@ -29,6 +29,12 @@ excerpt: ""
   2024年2月
 * 性別:
   男
+* 英文名字:Hanpter
 * 品種:三線鼠
 * 最愛吃的食物:向日葵種子
-* 興趣:咬主人的手指咬到流血     
+* 興趣:咬主人的手指咬到流血   
+* yt:[勞贖的個人頻道](https://www.youtube.com/@Hanpter-han87 "") 
+
+### 好吃一直吃~
+{% include video.html id="8I43VTjc2qA" title="eating" %}
+
