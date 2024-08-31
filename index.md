@@ -1,9 +1,9 @@
 ---
 title: Princend's blog
 feature_text: |
-  Princend = Prince + and
-  為甚麼叫Princend? 因為github不能取名為Prince，名字已被人取走。
-  剛好我中文名字的最後一個字是翰，所以在prince後面加上and
+  Princend = Prince + and  
+  為甚麼叫Princend? 因為github不能取名為Prince，名字已被人取走。  
+  剛好我中文名字的最後一個字是翰，所以在prince後面加上and  
   去a加nd 就變成Princend了
 feature_image: "https://picsum.photos/1300/400?image=989"
 excerpt: ""
@@ -22,7 +22,8 @@ excerpt: ""
 
 ## 勞贖
 這是我養的老鼠，他的名字叫**勞贖**
- ![mouse](assets/mouse.jpg)
+<img src="assets/mouse.jpg" alt="mouse" width="600" height="600">
+<br>
 
 * 出生日期:
   2024年2月
