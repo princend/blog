@@ -92,14 +92,14 @@ defaults:
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
-lang: en-GB # Set the site language
+lang: zh-TW # Set the site language
 title: "Princend" # Site name or title, also used in jekyll-seo-tag
-logo: "assets/logos/sunbaby.png" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/logos/sunbaby.png" # Site logo, also used in jekyll-seo-tag
 description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
-url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
+url: "" # Site url, also used in jekyll-seo-tag
 baseurl: ""
-repo: "https://github.com/daviddarnes/alembic"
-email: "me@daviddarnes.com"
+repo: "https://github.com/princend/princend.github.io"
+email: "waxdji3g4y3c04@gmail.com"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
 # google_analytics: ""
@@ -110,14 +110,14 @@ css_inline: true # Will insert all styles into a single <style> block in the <he
 
 # 8. Site favicons & manifest icons
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
-  16: 'blog/assets/logos/sunbaby.png'
-  32: 'blog/assets/logos/sunbaby.png'
-  96: 'blog/assets/logos/sunbaby.png'
-  120: 'blog/assets/logos/sunbaby.png'
-  144: 'blog/assets/logos/sunbaby.png'
-  180: 'blog/assets/logos/sunbaby.png'
-  512: 'blog/assets/logos/sunbaby.png'
-  1024: 'blog/assets/logos/sunbaby.png'
+  16: '/assets/logos/sunbaby.png'
+  32: '/assets/logos/sunbaby.png'
+  96: '/assets/logos/sunbaby.png'
+  120: '/assets/logos/sunbaby.png'
+  144: '/assets/logos/sunbaby.png'
+  180: '/assets/logos/sunbaby.png'
+  512: '/assets/logos/sunbaby.png'
+  1024: '/assets/logos/sunbaby.png'
 
 # 9. Site navigation
 navigation_header:
@@ -126,7 +126,7 @@ navigation_header:
 - title: Elements
   url: /elements/
 - title: Blog
-  url: /myblog/
+  url: /blog/
 - title: Categories
   url: /categories/
 - title: Search

@@ -1,8 +1,10 @@
 ---
 title: Princend's blog
 feature_text: |
-  ## Alembic
-  A Jekyll boilerplate theme designed to be a starting point for any Jekyll website
+  ## Princend
+  為甚麼叫Princend? 因為github不能取名為Prince，名字已被人取走。
+  剛好我中文名字的最後一個字是翰，所以在prince後面加上and
+  去a加nd 就變成Princend了
 feature_image: "https://picsum.photos/1300/400?image=989"
 excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
 ---
