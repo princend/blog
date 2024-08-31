@@ -95,7 +95,7 @@ encoding: utf-8 # Make sure the encoding is right
 lang: zh-TW # Set the site language
 title: "Princend" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/sunbaby.png" # Site logo, also used in jekyll-seo-tag
-description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
+description: "歡迎來到我的部落格ㄛ(❍ᴥ❍ʋ)" # Site description and default description, also used in jekyll-seo-tag
 url: "" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/princend/princend.github.io"
