@@ -12,7 +12,7 @@ excerpt: |
 
 > 視覺測試評估應用程序的可見輸出，並將該輸出與設計預期的結果進行比較。
 
-![https://file.notion.so/f/f/43e70cd6-a5b7-43d6-8a08-628e36b11757/30ca0998-2e82-4e64-b4b6-79d012606c56/_2021-06-11_8.57.10.png?table=block&id=7683a685-8078-42cf-bd68-9d87e1480342&spaceId=43e70cd6-a5b7-43d6-8a08-628e36b11757&expirationTimestamp=1725264000000&signature=jd3mL-Z6DdICC5YFCKapREmEArs7eBdmlQkx9e3mx6Y&downloadName=_2021-06-11_8.57.10.png](https://file.notion.so/f/f/43e70cd6-a5b7-43d6-8a08-628e36b11757/30ca0998-2e82-4e64-b4b6-79d012606c56/_2021-06-11_8.57.10.png?table=block&id=7683a685-8078-42cf-bd68-9d87e1480342&spaceId=43e70cd6-a5b7-43d6-8a08-628e36b11757&expirationTimestamp=1725264000000&signature=jd3mL-Z6DdICC5YFCKapREmEArs7eBdmlQkx9e3mx6Y&downloadName=_2021-06-11_8.57.10.png)
+![bitmap-compare](/assets/blog/2021-06-11-visual-testing/bitmap-compare.png)
 
 #### [When] 何時進行視覺測試？？
 
@@ -26,13 +26,14 @@ excerpt: |
 
 ##### 先看看以下圖片吧！
 
-![https://file.notion.so/f/f/43e70cd6-a5b7-43d6-8a08-628e36b11757/011b37ab-bea9-4c6d-ad95-8c58f2d4e0e6/ig.jpeg?table=block&id=d98e5fa7-3e54-4b65-8684-19ff9579dbf5&spaceId=43e70cd6-a5b7-43d6-8a08-628e36b11757&expirationTimestamp=1725264000000&signature=JaQJ6BCMPY2uTjdRy6psx1ceEPC6MEwkzVhmRaLbGlE&downloadName=ig.jpeg](https://file.notion.so/f/f/43e70cd6-a5b7-43d6-8a08-628e36b11757/011b37ab-bea9-4c6d-ad95-8c58f2d4e0e6/ig.jpeg?table=block&id=d98e5fa7-3e54-4b65-8684-19ff9579dbf5&spaceId=43e70cd6-a5b7-43d6-8a08-628e36b11757&expirationTimestamp=1725264000000&signature=JaQJ6BCMPY2uTjdRy6psx1ceEPC6MEwkzVhmRaLbGlE&downloadName=ig.jpeg)
+![ig](/assets/blog/2021-06-11-visual-testing/ig.jpeg)
+
 
 這是一則在ig上的廣告，但是他宣傳文案全部擠在一起，你認爲會對收入產生影響嗎？？
 
 #### [Benefit] 自動化視覺測試好處都有啥？？
+![test](/assets/blog/2021-06-11-visual-testing/test.gif)
 
-![https://file.notion.so/f/f/43e70cd6-a5b7-43d6-8a08-628e36b11757/6303efc1-2681-489b-8e01-b8003fa952a4/test.gif?table=block&id=8202d17f-2f38-4645-8442-84d662eeceb7&spaceId=43e70cd6-a5b7-43d6-8a08-628e36b11757&expirationTimestamp=1725264000000&signature=Uj2KOFFCKstB7b3hZC6qVjKXsUkJuVIdJoA1MxwXsZ0&downloadName=test.gif](https://file.notion.so/f/f/43e70cd6-a5b7-43d6-8a08-628e36b11757/6303efc1-2681-489b-8e01-b8003fa952a4/test.gif?table=block&id=8202d17f-2f38-4645-8442-84d662eeceb7&spaceId=43e70cd6-a5b7-43d6-8a08-628e36b11757&expirationTimestamp=1725264000000&signature=Uj2KOFFCKstB7b3hZC6qVjKXsUkJuVIdJoA1MxwXsZ0&downloadName=test.gif)
 
 ##### 1. 大量縮短測試時間
 
@@ -69,7 +70,8 @@ excerpt: |
 
 # [Tool] Percy
 
-![https://file.notion.so/f/f/43e70cd6-a5b7-43d6-8a08-628e36b11757/061b4fde-9ee0-4538-88d4-488aa3d29d73/_2021-06-11_9.01.01.png?table=block&id=18e986eb-be4e-42de-bc44-bcd2193b128e&spaceId=43e70cd6-a5b7-43d6-8a08-628e36b11757&expirationTimestamp=1725264000000&signature=Miwyhn4Sn5Is6QT-Nu2v_TSYWlywe1un8CmRRM3ZEHE&downloadName=_2021-06-11_9.01.01.png](https://file.notion.so/f/f/43e70cd6-a5b7-43d6-8a08-628e36b11757/061b4fde-9ee0-4538-88d4-488aa3d29d73/_2021-06-11_9.01.01.png?table=block&id=18e986eb-be4e-42de-bc44-bcd2193b128e&spaceId=43e70cd6-a5b7-43d6-8a08-628e36b11757&expirationTimestamp=1725264000000&signature=Miwyhn4Sn5Is6QT-Nu2v_TSYWlywe1un8CmRRM3ZEHE&downloadName=_2021-06-11_9.01.01.png)
+![percy](/assets/blog/2021-06-11-visual-testing/percy.png)
+
 
                                                                 percy 歷史寓意為「刺破」
 
@@ -115,7 +117,7 @@ PercyScript.run(async (page, percySnapshot) => {
 
 按照範本步驟操作後，最後匯出差異圖檔於percy.io上
 
-![https://file.notion.so/f/f/43e70cd6-a5b7-43d6-8a08-628e36b11757/cda41608-ce10-48ca-8991-acaf032eb239/_2021-06-11_8.07.56.png?table=block&id=af3e4942-7b68-4aec-bb80-e86b6ba92f01&spaceId=43e70cd6-a5b7-43d6-8a08-628e36b11757&expirationTimestamp=1725264000000&signature=YPbvPczsnq-wdprRyuQ9eyjvs4_LfJ-6g3w4PKZbu08&downloadName=_2021-06-11_8.07.56.png](https://file.notion.so/f/f/43e70cd6-a5b7-43d6-8a08-628e36b11757/cda41608-ce10-48ca-8991-acaf032eb239/_2021-06-11_8.07.56.png?table=block&id=af3e4942-7b68-4aec-bb80-e86b6ba92f01&spaceId=43e70cd6-a5b7-43d6-8a08-628e36b11757&expirationTimestamp=1725264000000&signature=YPbvPczsnq-wdprRyuQ9eyjvs4_LfJ-6g3w4PKZbu08&downloadName=_2021-06-11_8.07.56.png)
+![percy-io](/assets/blog/2021-06-11-visual-testing/percy-io.png)
 
 ## 優點
 
@@ -193,7 +195,7 @@ describe('CurrencySPA', () => {
 
 5.可發布通知於slack上
 
-![https://file.notion.so/f/f/43e70cd6-a5b7-43d6-8a08-628e36b11757/7e31f7b2-74d9-4c9d-9559-6ec227490dd9/_2021-06-11_8.51.14.png?table=block&id=0a309ef1-5064-4a65-9e62-62397573c7a2&spaceId=43e70cd6-a5b7-43d6-8a08-628e36b11757&expirationTimestamp=1725264000000&signature=V3q057ejKCW863iLlUzqZGbK9U4VvRYuS8DE5eP1YWg&downloadName=_2021-06-11_8.51.14.png](https://file.notion.so/f/f/43e70cd6-a5b7-43d6-8a08-628e36b11757/7e31f7b2-74d9-4c9d-9559-6ec227490dd9/_2021-06-11_8.51.14.png?table=block&id=0a309ef1-5064-4a65-9e62-62397573c7a2&spaceId=43e70cd6-a5b7-43d6-8a08-628e36b11757&expirationTimestamp=1725264000000&signature=V3q057ejKCW863iLlUzqZGbK9U4VvRYuS8DE5eP1YWg&downloadName=_2021-06-11_8.51.14.png)
+![slack](/assets/blog/2021-06-11-visual-testing/slack.png)
 
 ## 缺點
 
@@ -201,7 +203,7 @@ describe('CurrencySPA', () => {
 
      若是免費會員則圖片上限一個月只有5000張screenshots
 
-![https://file.notion.so/f/f/43e70cd6-a5b7-43d6-8a08-628e36b11757/116dc59e-8328-4f3c-bcda-e476d0217493/_2021-06-11_8.54.49.png?table=block&id=8047a479-1466-4a0f-b08f-081b3fa73507&spaceId=43e70cd6-a5b7-43d6-8a08-628e36b11757&expirationTimestamp=1725264000000&signature=Vg-c94MHf6Sgpg7wz_6BB6jZeLc_qSvL9TF4hr6zsoI&downloadName=_2021-06-11_8.54.49.png](https://file.notion.so/f/f/43e70cd6-a5b7-43d6-8a08-628e36b11757/116dc59e-8328-4f3c-bcda-e476d0217493/_2021-06-11_8.54.49.png?table=block&id=8047a479-1466-4a0f-b08f-081b3fa73507&spaceId=43e70cd6-a5b7-43d6-8a08-628e36b11757&expirationTimestamp=1725264000000&signature=Vg-c94MHf6Sgpg7wz_6BB6jZeLc_qSvL9TF4hr6zsoI&downloadName=_2021-06-11_8.54.49.png)
+![price](/assets/blog/2021-06-11-visual-testing/price.png)
 
    
 
