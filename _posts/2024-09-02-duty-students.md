@@ -124,4 +124,5 @@ def line_notify(msg):
 ![result](/assets/blog/2024-09-02-duty-students/result.jpg)
 
 ### 結論
-其實寫程式還是很麻煩，而且還是要每天都要打開line查看，有點脫褲子放屁ˊuˋ
+其實寫程式還是很麻煩，甚至App Scripts都可以自己設觸發條件 不用透過Cloud Scheduler
+然後還是要每天都要打開line查看，有點脫褲子放屁ˊuˋ
