@@ -40,10 +40,6 @@ a {
     background-position: 0 93%;
     background-repeat: repeat-x;
     background-size: 100% 0.15rem;
-    text-shadow: 0.1rem 0 $backgroundColour,
-                 0.15rem 0 $backgroundColour,
-                -0.1rem 0 $backgroundColour,
-                -0.15rem 0 $backgroundColour;
 
     &:hover, &:active, &:focus {
       background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,$hoverColour 50%);
@@ -360,4 +356,28 @@ a {
   .oldstyle-numerals {
     font-feature-settings: 'onum', 'kern';
   }
+}
+
+/* 亮模式下的标题样式 */
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6 {
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    /* 你可以在这里添加更多亮模式下的样式 */
+}
+
+/* 暗黑模式下的标题样式 */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    /* 你可以在这里添加更多暗黑模式下的样式 */
 }

@@ -1,4 +1,5 @@
 {% if site.navigation_header %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <nav class="nav  nav--header">
   <ul class="list  list--nav">
     {% for item in site.navigation_header %}
@@ -13,7 +14,11 @@
         <a href="{{ url }}">{{ item.title }}</a>
       </li>
     {% endfor %}
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="切換樣式">
+      <i id="theme-icon" class="fas fa-sun"></i>
+    </button>
   </ul>
+  
   <button class="button  button--nav" aria-label="Menu toggle">
     {% include icon.html id="nav" title="Menu" %}
   </button>
